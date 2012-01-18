@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFC Memory</string>
+    <string name="empty"></string>
+    <string name="double_found">Double found!</string>
+    <string name="triple_found">Triple found!</string>
+    <string name="manage_cards">Manage cards (NFC-Tags)</string>
+    <string name="manage_players">Manage players</string>
+    <string name="start_game">START</string>
+    <string name="winner_is">Winner(s): %1$s</string>
+    <string name="back_to_home">Back to Menu</string>
+    <string name="play_again">Play again!</string>
+    <string name="set_players_activity_title">Manage players</string>
+    <string name="add_new_player">Add new player</string>
+    <string name="player_name">Name:</string>
+    <string name="preferences_players">Players</string>
+    <string name="settings">Settings</string>
+    <string name="scan_tag">Scan tag to add!</string>
+    <string name="tag_added">Tag with ID %1$s added!</string>
+    <string name="tag_already_existing">Tag is already existing!</string>
+    <string name="delete_memorized_cards">Delete all memorized cards</string>
+    <string name="request_delete_all_cards">Do you really want to delete all cards?</string>
+    <string name="number_of_cards"> Cards</string>
+    <string name="manage_cards_activity_title">Manage cards (NFC-Tags)</string>
+    <string name="delete_card">Delete card</string>
+    <string name="request_delete_card">Do you really want to delete the selected card?</string>
+
+    <string-array name="impossible_number_of_cards_dialog">
+        <item>Delete the last card</item>
+        <item>Add additional cards (at least one)</item>
+        <item>Quit anyway</item>
+    </string-array>
+
+    <string name="impossible_number_of_cards_title">With %1$s cards it\'s impossible to play memory!</string>
+    <string name="preferences_cards">Cards (NFC-Tags)</string>
+    <string name="not_enough_players">You need more players!</string>
+    <string name="select_pair_size">Do want to play with double or triple pairs?</string>
+    <string name="faq_title">FAQ</string>
+    <string name="double_pairs">Double pairs</string>
+    <string name="triple_pairs">Triple pairs</string>
+    <string name="faq" formatted="false">        <![CDATA[<p><strong>What do I need?</strong><br/>
+NFC-enabled Android phone<br/>
+Some NFC-Tags</p>
+<p><strong>How do I get started?</strong><br/>
+1. Go to <strong>Manage players</strong> and add one or more players<br/>
+2. Go to <strong>Manage cards (NFC-Tags) </strong>and scan some tags.<br/>
+<strong>Information: </strong>It will automatically choose the right pair size. So if you have ex. <strong>10 cards</strong>, you will play with <strong>double pairs</strong>. But if you have ex. <strong>9 cards</strong>, you will play with <strong>triple pairs</strong>. If both would be possible, you will get asked at the beginning of the game.<br/>
+3. Click PLAY!</p>
+<p><strong>Who made this awesome game?</strong><br/>
+The game was made by <a href="http://jolau.ch" target="_blank">Jonas Lauener</a> under the guidance of <a href="http://www.gruntz.ch/" target="_blank">Dominik Gruntz</a> at the <a href="http://www.fhnw.ch/technik" target="_blank">FHNW</a>.</p>
+<p><strong>Is this game open source?</strong><br/>
+Yes, you can find the source code at: <a href="https://code.google.com/p/nfcmemory/" target="_blank">https://code.google.com/p/nfcmemory/</a></p>]]>
+    </string>
+
+</resources>
