@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/preferences_players" >
+        <PreferenceScreen android:title="@string/set_players_activity_title" >
+            <intent android:action="ch.fhnw.imvs.nfc.memory.SetPlayersActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_cards" >
+        <PreferenceScreen android:title="@string/manage_cards_activity_title" >
+            <intent android:action="ch.fhnw.imvs.nfc.memory.MemorizeCardsActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
