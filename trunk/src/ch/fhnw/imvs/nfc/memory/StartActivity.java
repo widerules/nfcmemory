@@ -1,15 +1,16 @@
 /*
- * Copyright (c) 2012 Fachhochschule Nordwestschweiz (FHNW)
- * All Rights Reserved. 
+ * Copyright (c) 2012 Fachhochschule Nordwestschweiz (FHNW) All Rights Reserved.
  */
 
 package ch.fhnw.imvs.nfc.memory;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
+import android.nfc.NfcAdapter;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,7 +21,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 
-public class StartActivity extends Activity {
+public class StartActivity
+    extends Activity
+{
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -62,6 +65,27 @@ public class StartActivity extends Activity {
     }
 
     @Override
+    protected void onResume()
+    {
+        super.onResume();
+        if (!NfcAdapter.getDefaultAdapter(this).isEnabled())
+        {
+            new AlertDialog.Builder(this)
+                .setMessage(R.string.warning_nfc_off)
+                .setPositiveButton(R.string.settings,
+                    new DialogInterface.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which)
+                        {
+                            startActivity(new Intent(
+                                android.provider.Settings.ACTION_WIRELESS_SETTINGS));
+                        }
+                    }).show();
+        }
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater inflater = getMenuInflater();
@@ -88,11 +112,12 @@ public class StartActivity extends Activity {
             {
                 public boolean shouldOverrideUrlLoading(WebView view, String url)
                 {
-                    if (url != null && (url.startsWith("http://")
-                        || url.startsWith("https://")))
+                    if (url != null
+                        && (url.startsWith("http://") || url
+                            .startsWith("https://")))
                     {
-                        StartActivity.this.startActivity(
-                            new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+                        StartActivity.this.startActivity(new Intent(
+                            Intent.ACTION_VIEW, Uri.parse(url)));
                         return true;
                     }
                     else
