@@ -3,8 +3,8 @@
 
     <string name="app_name">NFC Memory</string>
     <string name="empty"></string>
-    <string name="double_found">Double found!</string>
-    <string name="triple_found">Triple found!</string>
+    <string name="twins_found">Twins found!</string>
+    <string name="triplets_found">Triplets found!</string>
     <string name="manage_cards">Manage cards (NFC-Tags)</string>
     <string name="manage_players">Manage players</string>
     <string name="start_game">START</string>
@@ -32,13 +32,14 @@
         <item>Quit anyway</item>
     </string-array>
 
+    <string name="warning_nfc_off">Your NFC adapter is disabled. Please enable it to use this app.</string>
     <string name="impossible_number_of_cards_title">With %1$s cards it\'s impossible to play memory!</string>
     <string name="preferences_cards">Cards (NFC-Tags)</string>
     <string name="not_enough_players">You need more players!</string>
-    <string name="select_pair_size">Do want to play with double or triple pairs?</string>
+    <string name="select_pair_size">Do want to play with twins or triplets?</string>
     <string name="faq_title">FAQ</string>
-    <string name="double_pairs">Double pairs</string>
-    <string name="triple_pairs">Triple pairs</string>
+    <string name="twins">Twins</string>
+    <string name="triplets">Triplets</string>
     <string name="faq" formatted="false">        <![CDATA[<p><strong>What do I need?</strong><br/>
 NFC-enabled Android phone<br/>
 Some NFC-Tags</p>

@@ -198,7 +198,7 @@ public class GameActivity
         {
             new AlertDialog.Builder(this)
                 .setTitle(R.string.select_pair_size)
-                .setPositiveButton(R.string.double_pairs,
+                .setPositiveButton(R.string.twins,
                     new DialogInterface.OnClickListener()
                     {
                         @Override
@@ -209,7 +209,7 @@ public class GameActivity
                             generateCardsAndImageViews(nfcTags);
                         }
                     })
-                .setNegativeButton(R.string.triple_pairs,
+                .setNegativeButton(R.string.triplets,
                     new DialogInterface.OnClickListener()
                     {
                         @Override
@@ -367,11 +367,11 @@ public class GameActivity
                         String found = "";
                         if (pairSize == 2)
                         {
-                            found = getString(R.string.double_found);
+                            found = getString(R.string.twins_found);
                         }
                         else if (pairSize == 3)
                         {
-                            found = getString(R.string.triple_found);
+                            found = getString(R.string.triplets_found);
                         }
                         // show message if a pair was found
                         Toast toast = Toast.makeText(this, found, 2000);
