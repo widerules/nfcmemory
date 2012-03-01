@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <resources>
-
     <string name="app_name">NFC Memory</string>
-    <string name="empty"></string>
+    <string name="empty"/>
     <string name="twins_found">Twins found!</string>
     <string name="triplets_found">Triplets found!</string>
     <string name="manage_cards">Manage cards (NFC-Tags)</string>
@@ -25,13 +24,11 @@
     <string name="manage_cards_activity_title">Manage cards (NFC-Tags)</string>
     <string name="delete_card">Delete card</string>
     <string name="request_delete_card">Do you really want to delete the selected card?</string>
-
     <string-array name="impossible_number_of_cards_dialog">
         <item>Delete the last card</item>
         <item>Add additional cards (at least one)</item>
         <item>Quit anyway</item>
     </string-array>
-
     <string name="warning_nfc_off">Your NFC adapter is disabled. Please enable it to use this app.</string>
     <string name="impossible_number_of_cards_title">With %1$s cards it\'s impossible to play memory!</string>
     <string name="preferences_cards">Cards (NFC-Tags)</string>
@@ -40,18 +37,18 @@
     <string name="faq_title">FAQ</string>
     <string name="twins">Twins</string>
     <string name="triplets">Triplets</string>
-    <string name="faq" formatted="false">        <![CDATA[<p><strong>What do I need?</strong><br/>
-NFC-enabled Android phone<br/>
-Some NFC-Tags</p>
-<p><strong>How do I get started?</strong><br/>
-1. Go to <strong>Manage players</strong> and add one or more players<br/>
-2. Go to <strong>Manage cards (NFC-Tags) </strong>and scan some tags.<br/>
-<strong>Information: </strong>It will automatically choose the right pair size. So if you have ex. <strong>10 cards</strong>, you will play with <strong>double pairs</strong>. But if you have ex. <strong>9 cards</strong>, you will play with <strong>triple pairs</strong>. If both would be possible, you will get asked at the beginning of the game.<br/>
-3. Click PLAY!</p>
-<p><strong>Who made this awesome game?</strong><br/>
-The game was made by <a href="http://jolau.ch" target="_blank">Jonas Lauener</a> under the guidance of <a href="http://www.gruntz.ch/" target="_blank">Dominik Gruntz</a> at the <a href="http://www.fhnw.ch/technik" target="_blank">FHNW</a>.</p>
-<p><strong>Is this game open source?</strong><br/>
-Yes, you can find the source code at: <a href="https://code.google.com/p/nfcmemory/" target="_blank">https://code.google.com/p/nfcmemory/</a></p>]]>
+    <string formatted="false" name="faq">        &amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;What do I need?&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;
+NFC-enabled Android phone&amp;lt;br/&amp;gt;
+Some NFC-Tags&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;How do I get started?&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;
+1. Go to &amp;lt;strong&amp;gt;Manage players&amp;lt;/strong&amp;gt; and add one or more players&amp;lt;br/&amp;gt;
+2. Go to &amp;lt;strong&amp;gt;Manage cards (NFC-Tags) &amp;lt;/strong&amp;gt;and scan some tags.&amp;lt;br/&amp;gt;
+&amp;lt;strong&amp;gt;Information: &amp;lt;/strong&amp;gt;It will automatically choose the right pair size. So if you have ex. &amp;lt;strong&amp;gt;10 cards&amp;lt;/strong&amp;gt;, you will play with &amp;lt;strong&amp;gt;double pairs&amp;lt;/strong&amp;gt;. But if you have ex. &amp;lt;strong&amp;gt;9 cards&amp;lt;/strong&amp;gt;, you will play with &amp;lt;strong&amp;gt;triple pairs&amp;lt;/strong&amp;gt;. If both would be possible, you will get asked at the beginning of the game.&amp;lt;br/&amp;gt;
+3. Click PLAY!&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Who made this awesome game?&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;
+The game was made by &amp;lt;a href="http://jolau.ch" target="_blank"&amp;gt;Jonas Lauener&amp;lt;/a&amp;gt; under the guidance of &amp;lt;a href="http://www.gruntz.ch/" target="_blank"&amp;gt;Dominik Gruntz&amp;lt;/a&amp;gt; at the &amp;lt;a href="http://www.fhnw.ch/technik" target="_blank"&amp;gt;FHNW&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;strong&amp;gt;Is this game open source?&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;
+Yes, you can find the source code at: &amp;lt;a href="https://code.google.com/p/nfcmemory/" target="_blank"&amp;gt;https://code.google.com/p/nfcmemory/&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;
     </string>
-
+    <string name="alert_quit_game">Quit game?</string>
 </resources>
