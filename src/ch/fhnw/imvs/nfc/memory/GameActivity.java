@@ -121,6 +121,21 @@ public class GameActivity
         nfcAdapter.disableForegroundDispatch(this);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert)
+        .setTitle(R.string.alert_quit_game)
+        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                finish();
+            }
+        }).setNegativeButton(android.R.string.no, null).show();
+    }
+    
     private void setPlayers()
     {
         List<String> playerNames = new ArrayList<String>();
